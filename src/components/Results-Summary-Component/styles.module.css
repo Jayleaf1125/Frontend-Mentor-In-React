@@ -1,8 +1,14 @@
 :root {
-    --text-1:#e07375;
-    --text-2:#eebc5b;
-    --text-3:#62bea9;
-    --text-4:#4249b9;
+    --text-1: #e07375;
+    --text-2: #eebc5b;
+    --text-3: #62bea9;
+    --text-4: #4249b9;
+}
+
+li {
+    list-style-type: none;
+    color: black;
+    margin-bottom: 10px;
 }
 
 .container {
@@ -10,13 +16,67 @@
 }
 
 .resultsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid red;
+    background: linear-gradient(#6541fd, #322be9);
+    border-radius: 10%;
+    min-width: fit-content;
+    width: 10rem;
 }
+
+.resultsBio {
+    border: 1px solid red;
+    opacity: 0.8;
+
+}
+
+.ellipse {
+    display: grid;
+    place-content: center;
+    background-color: #4a26d0;
+    height: 12rem;
+    width: 12rem;
+    justify-self: center;
+    border-radius: 50%;
+}
+
+.numbersInResult {
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+/* ----------------------------------- */
 
 .summaryContainer {
+    display: flex;
+    flex-direction: column;
+    /* background-color: white; */
     border: 1px solid white;
+    /* width: 45rem; */
 }
 
-.text {
+.textOne {
     color: var(--text-1);
+    margin-right: 10px;
+}
+
+.textTwo {
+    color: var(--text-2);
+    margin-right: 10px;
+}
+
+.textThree {
+    color: var(--text-3);
+    margin-right: 10px;
+}
+
+.textFour {
+    color: var(--text-4);
+    margin-right: 10px;
+}
+
+.numbers {
+    color: gray;
 }
