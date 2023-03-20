@@ -1,0 +1,22 @@
+:root {
+    --text-1:#e07375;
+    --text-2:#eebc5b;
+    --text-3:#62bea9;
+    --text-4:#4249b9;
+}
+
+.container {
+    display: flex;
+}
+
+.resultsContainer {
+    border: 1px solid red;
+}
+
+.summaryContainer {
+    border: 1px solid white;
+}
+
+.text {
+    color: var(--text-1);
+}
